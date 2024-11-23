@@ -1,0 +1,22 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    background: linear-gradient(135deg, rgba(25, 25, 25, 0.8), rgba(255, 100, 20, 0.8));
+    background-size: 200% 200%; /* Enlarges the gradient for smooth animation */
+    animation: gradientMove 5s ease infinite; /* Animation for moving the gradient */
+  }
+  
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%; /* Start position */
+    }
+    50% {
+      background-position: 100% 50%; /* Mid position */
+    }
+    100% {
+      background-position: 0% 50%; /* End position */
+    }
+  }
